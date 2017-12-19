@@ -366,12 +366,12 @@ class Bookmark(db.Model):
 
     def to_dict(self):
         result = {
-                'title': self.title,
-                'url': self.url,
-                'created':  self.created_date.strftime('%Y-%m-%d %H:%M:%S'),
-                'url_hash': self.url_hash,
-                'tags': self.tags,
-                }
+            'title': self.title,
+            'url': self.url,
+            'created':  self.created_date.strftime('%Y-%m-%d %H:%M:%S'),
+            'url_hash': self.url_hash,
+            'tags': self.tags,
+        }
         return result
 
 
